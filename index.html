@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#130a18">
+<title>For Aneesha ✦</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ambient" aria-hidden="true">
+  <div class="aurora"></div>
+  <div id="stars"></div>
+  <div id="hearts"></div>
+  <div id="balloons"></div>
+  <div class="light-streak streak-1"></div>
+  <div class="light-streak streak-2"></div>
+  <div class="light-streak streak-3"></div>
+</div>
+
+<main id="app">
+  <section id="date-screen" class="screen active">
+    <div class="date-content">
+      <p class="eyebrow">A LITTLE SURPRISE IS WAITING</p>
+      <h1>Until your day</h1>
+      <p class="date-line">21 SEPTEMBER 2026</p>
+      <div class="date-countdown">
+        <div class="time-unit"><span id="days">00</span><small>DAYS</small></div><i></i>
+        <div class="time-unit"><span id="hours">00</span><small>HOURS</small></div><i></i>
+        <div class="time-unit"><span id="minutes">00</span><small>MINUTES</small></div><i></i>
+        <div class="time-unit"><span id="seconds">00</span><small>SECONDS</small></div>
+      </div>
+      <div class="tiny-star">✦</div>
+    </div>
+  </section>
+
+  <section id="countdown-screen" class="screen">
+    <div class="countdown-halo"></div>
+    <div id="big-number">3</div>
+    <p class="countdown-label">something beautiful is coming</p>
+  </section>
+
+  <section id="birthday-screen" class="screen">
+    <canvas id="birthday-canvas"></canvas>
+<div id="cake-caption">MAKE A WISH</div>
+  </section>
+
+  <section id="memory-screen" class="screen">
+    <div class="memory-backdrop"></div>
+    <figure class="memory-photo-wrap">
+      <img src="assets/aneesha-memory.jpg" alt="A special birthday memory">
+    </figure>
+    <p id="memory-caption">And now… something from me.</p>
+  </section>
+
+  <section id="video-screen" class="screen">
+    <div class="video-intro"><span class="video-kicker">A message for you</span><h2>From me, to you.</h2></div>
+    <div class="video-shell">
+      <video id="message-video" playsinline preload="metadata">
+        <source src="assets/message.mp4" type="video/mp4">
+      </video>
+      <button id="play-video" class="play-button" type="button"><span>▶</span><em>Play my message</em></button>
+    </div>
+  </section>
+
+  <section id="heart-screen" class="screen">
+    <canvas id="heart-canvas" aria-hidden="true"></canvas>
+    <div class="heart-vignette" aria-hidden="true"></div>
+    <div class="heart-title">Stay happy. I’ll always be there for you, no matter what❤️</div>
+  </section>
+
+  <section id="final-screen" class="screen">
+    <div class="video-intro"><span class="video-kicker">One more little thing</span><h2>For you, Aneesha.</h2></div>
+    <div class="video-shell">
+      <video id="final-video" playsinline preload="metadata">
+        <source src="assets/after-message.mp4" type="video/mp4">
+      </video>
+      <button id="final-play" class="play-button" type="button"><span>▶</span><em>Play</em></button>
+    </div>
+  </section>
+</main>
+
+<audio id="bg-music" preload="auto" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
