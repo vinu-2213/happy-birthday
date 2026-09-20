@@ -3,7 +3,7 @@
 // ============================================================
 // Keep TEST_MODE=true while developing. It makes the first countdown 10 seconds.
 // For the real page set TEST_MODE=false. The real target is midnight IST on 21 Sep 2026.
-const TEST_MODE = true;
+const TEST_MODE = false;
 const TEST_DELAY_MS = 10000;
 const REAL_TARGET = new Date('2026-09-21T00:00:00+05:30').getTime();
 const TARGET = TEST_MODE ? Date.now() + TEST_DELAY_MS : REAL_TARGET;
